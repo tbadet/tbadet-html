@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+  (function(){
+    try{
+      var t = localStorage.getItem('theme');
+      if(!t){ t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+      document.documentElement.setAttribute('data-theme', t);
+    }catch(e){}
+  })();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thomas Badet | Academic Profile</title>
+<meta name="description" content="My research focuses on elucidating the evolutionary dynamics of fungal genomes, with particular emphasis on the impact of mobile genetic elements on genome architecture, function, and adaptability.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">Thomas Badet</a>
+    <div class="nav-group">
+      <ul class="nav-links">
+        <li><a href="#hero" data-nav class="is-active">Home</a></li>
+        <li><a href="pages/research.html">Research</a></li>
+        <li><a href="pages/publications.html">Publications</a></li>
+        <li><a href="pages/cv.html">CV</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="wrap hero">
+      <div class="hero-photo-frame">
+        <img src="assets/images/profile.png" alt="Thomas Badet">
+      </div>
+      <div class="hero-text">
+        <h1>Thomas Badet</h1>
+        <p class="hero-role">Lecturer · Evolutionary genomics · University of Neuchâtel</p>
+        <p class="hero-tagline">I specialize in understanding how organisms adapt and evolve at the genetic level. My work combines genetics, genomics, and evolutionary biology to uncover how changes in DNA help species respond to environmental challenges. I use big-data analysis and comparative methods to study genome dynamics across many species and populations, applying new computational tools and frameworks to detect patterns of genetic change and their impact on traits.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn" href="pages/cv.html">View CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LATEST PUBLICATIONS ===================== -->
+  <section class="alt reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Latest Publications</span>
+        <h2>Recent work</h2>
+      </div>
+      <div class="pub-grid">
+
+        <div class="pub-card">
+          <div class="research-frame">
+            <img src="assets/images/pub-1.png" alt="Evolution of major eukaryotic genome defense systems">
+          </div>
+          <div class="pub-body">
+            <h3>The fungal RIP hypermutator mechanism has deep eukaryotic roots.</h3>
+            <p class="pub-meta">Malagnac F, Gladyshev E, Croll D and <span class="author-highlight">Badet T</span>. <span class="journal">Trends in Genetics</span>, 2026</p>
+            <a class="pub-link" href="https://doi.org/10.1016/j.tig.2026.05.008" target="_blank" rel="noopener noreferrer">Link to paper →</a>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <div class="research-frame">
+            <img src="assets/images/pub-2.png" alt="Major shift in genome size detected in Leotiomycete fungi">
+          </div>
+          <div class="pub-body">
+            <h3>Phylogenomic signatures of repeat-induced point mutations across the fungal kingdom.</h3>
+            <p class="pub-meta"><span class="author-highlight">Badet T</span> and Croll D. <span class="journal">PLoS Biology</span>, 2025</p>
+            <a class="pub-link" href="https://doi.org/10.1371/journal.pbio.3003433" target="_blank" rel="noopener noreferrer">Link to paper →</a>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <div class="research-frame">
+            <img src="assets/images/pub-3.png" alt="Ongoing Styx activity promotes chromosomal rearrangements">
+          </div>
+          <div class="pub-body">
+            <h3>Recent reactivation of a pathogenicity-associated transposable element is associated with major chromosomal rearrangements in a fungal wheat pathogen.</h3>
+            <p class="pub-meta"><span class="author-highlight">Badet T</span>, Moser Tralamazza S, Feurtey A and Croll D. <span class="journal">Nucleic Acids Research</span>, 2024</p>
+            <a class="pub-link" href="https://doi.org/10.1093/nar/gkad1214" target="_blank" rel="noopener noreferrer">Link to paper →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">About</span>
+        <h2>Genomicist focusing on microbial fungi</h2>
+      </div>
+      <p class="lede">I completed my PhD at the University of Toulouse (France) in 2017 under the supervision of Dr. Sylvain Raffaele, studying the genetic basis of plant–microbe interactions. I then joined the laboratory of Prof. Daniel Croll to develop expertise in evolutionary genomics, bioinformatics, and fungal biology, with a particular focus on the mechanisms generating and maintaining genomic variation. Since 2021, I have been a Maître-Assistant in the laboratory of Prof. Josephus Vermeer at the University of Neuchâtel, where I teach phytopathology and bioinformatics at Bachelor and Master levels. My research centers on the evolutionary forces shaping fungal genomes, particularly the interplay between transposable elements, genome defense mechanisms, and genome architecture in fungi.</p>
+      <ul class="tags">
+        <li>Pangenomes</li>
+        <li>Transposable elements</li>
+        <li>Genome defenses</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== RESEARCH TEASER ===================== -->
+  <section class="alt reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Research</span>
+        <h2>Coevolutionary dynamics between transposable elements and host genome defenses</h2>
+      </div>
+      <p class="lede">My research focuses on elucidating the evolutionary dynamics of microbial genomes, with particular emphasis on the impact of mobile genetic elements on genome architecture, function, and adaptability. Building on a foundation in plant pathology and further developed through evolutionary genomics, I employ a combination of experimental and computational methodologies to investigate the molecular interplay between mobile elements and genome defense systems.</p>
+      <p style="margin-top: 18px;"><a class="btn" href="pages/research.html">Learn more →</a></p>
+    </div>
+  </section>
+
+  <!-- ===================== TIMELINE ===================== -->
+  <section class="reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Education &amp; Experience</span>
+        <h2>Timeline</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-years">2021–today</div>
+          <div>
+            <h3>Lecturer</h3>
+            <p class="timeline-meta">University of Neuchâtel · with Professor Joop Vermeer</p>
+            <ul>
+              <li>Introduction to Phytopathology (BSc), Plant Pathology (MSc) and Bioinformatic Tools (MSc)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-years">2018–2021</div>
+          <div>
+            <h3>Postdoctoral researcher</h3>
+            <p class="timeline-meta">University of Neuchâtel · with Professor Daniel Croll</p>
+            <ul>
+              <li>Contribution of transposable elements to fungal pangenome evolution</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-years">2014–2017</div>
+          <div>
+            <h3>PhD in plant–microbe interactions</h3>
+            <p class="timeline-meta">University of Toulouse · with Sylvain Raffaele</p>
+            <ul>
+              <li>Genome scale analysis of <i>Arabidopsis thaliana</i> quantitative disease resistance to the generalist fungal pathogen <i>Sclerotinia sclerotiorum</i></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Get in Touch</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h3>Reach me</h3>
+          <p>Email: <a href="mailto:thomas.badet@unine.ch">thomas.badet@unine.ch</a></p>
+          <p>Institute of Biology</p>
+          <p>Rue Emile-Argand 11 | Office A313</p>
+          <p>University of Neuchâtel | CH-2000 Neuchâtel | Switzerland</p>
+        </div>
+        <div class="contact-block">
+          <h3>Connect</h3>
+          <ul class="connect-list">
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/thomas-badet-538b6226b">LinkedIn</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=i1IP7FYAAAAJ&hl">Google Scholar</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.researchgate.net/scientific-contributions/Thomas-Badet-2047805781">ResearchGate</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/tbadet">GitHub</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0001-6130-441X">ORCiD</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Thomas Badet. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
